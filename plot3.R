@@ -18,7 +18,7 @@ yrange<-range(c(proj2$Sub_metering_1,proj2$Sub_metering_2,proj2$Sub_metering_3))
 with(proj2, plot(date_time,Sub_metering_1, type = "l", xlab="", ylab="Energy Sub Metering", col="blue",ylim=yrange))
 lines(proj2$date_time, proj2$Sub_metering_2, col="red")
 lines(proj2$date_time, proj2$Sub_metering_3, col="green")
-legend(locator(1),pch = "-", col = c("blue", "red", "green"), legend = c("Sub_metering_1  ", "Sub_metering_2  ", "Sub_metering_3  "), cex=0.5, bty="n")
+legend(locator(1),pch = "-", col = c("blue", "red", "green"), legend = c("Sub_metering_1    ", "Sub_metering_2    ", "Sub_metering_3    "), cex=0.5, bty="Y")
 
 ## copy it
 dev.copy(png, file="plot3.png")
